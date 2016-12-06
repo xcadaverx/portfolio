@@ -1,0 +1,43 @@
+Arguments: 
+  /Users/xcadaverx/.nvm/versions/node/v6.9.1/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/xcadaverx/.nvm/versions/node/v6.9.1/bin:/Users/xcadaverx/.themekit:/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:/Users/xcadaverx/.swiftenv/shims:/Users/xcadaverx/.rvm/gems/ruby-2.3.0/bin:/Users/xcadaverx/.rvm/gems/ruby-2.3.0@global/bin:/Users/xcadaverx/.rvm/rubies/ruby-2.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/xcadaverx/.rvm/bin
+
+Yarn version: 
+  0.16.1
+
+Node version: 
+  6.9.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "Portfolio",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "me",
+    "license": "MIT"
+    "scripts": {
+      "dev": "next"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+bower manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/xcadaverx/Desktop/dev/Web Projects/Portfolio/package.json: Unexpected string in JSON at position 108
+      at Object.parse (native)
+      at /usr/local/Cellar/yarn/0.16.1/libexec/lib/node_modules/yarn/lib/util/fs.js:271:57
+      at next (native)
+      at step (/usr/local/Cellar/yarn/0.16.1/libexec/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:17:30)
+      at /usr/local/Cellar/yarn/0.16.1/libexec/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:28:20
