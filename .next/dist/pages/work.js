@@ -39,7 +39,7 @@ exports.default = function () {
           _react2.default.createElement(
             _link2.default,
             { href: '/stockboard' },
-            _react2.default.createElement('img', { className: 'w-100 db center', src: '/static/StockBoard.png' })
+            _react2.default.createElement('img', { className: 'w-100 db center dim', src: '/static/StockBoard.png' })
           )
         ),
         _react2.default.createElement(
@@ -48,7 +48,7 @@ exports.default = function () {
           _react2.default.createElement(
             _link2.default,
             { href: '/bap' },
-            _react2.default.createElement('img', { className: 'w-100 db center', src: '/static/BeAPhotographer.png' })
+            _react2.default.createElement('img', { className: 'w-100 db center dim', src: '/static/BeAPhotographer.png' })
           )
         ),
         _react2.default.createElement(
@@ -57,7 +57,7 @@ exports.default = function () {
           _react2.default.createElement(
             _link2.default,
             { href: '/ydl' },
-            _react2.default.createElement('img', { className: 'w-100 db center', src: '/static/YDL.png' })
+            _react2.default.createElement('img', { className: 'w-100 db center dim', src: '/static/YDL.png' })
           )
         ),
         _react2.default.createElement(
@@ -66,7 +66,7 @@ exports.default = function () {
           _react2.default.createElement(
             _link2.default,
             { href: '/showstubs' },
-            _react2.default.createElement('img', { className: 'w-100 db center', src: '/static/ShowStubs.png' })
+            _react2.default.createElement('img', { className: 'w-100 db center dim', src: '/static/ShowStubs.png' })
           )
         )
       )

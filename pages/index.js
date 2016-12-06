@@ -8,7 +8,7 @@ export default () => (
   <div className="avenir">
 
     <Head>
-      <link rel="stylesheet" href="https://raw.githubusercontent.com/jstejada/react-typist/master/dist/Typist.css"/>
+      <link rel="stylesheet" href="/static/Typist.css"/>
     </Head>
 
     <Header />

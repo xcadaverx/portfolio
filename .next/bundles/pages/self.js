@@ -66,7 +66,7 @@ module.exports =
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "427f621b50e4b10827a3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b05269ab26977ac862fc"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -261,7 +261,7 @@ module.exports =
 /******/ 			hotSetStatus("prepare");
 /******/ 			hotCallback = callback;
 /******/ 			hotUpdate = {};
-/******/ 			var chunkId = 3;
+/******/ 			var chunkId = 4;
 /******/ 			{ // eslint-disable-line no-lone-blocks
 /******/ 				/*globals chunkId */
 /******/ 				hotEnsureUpdateChunk(chunkId);
@@ -586,7 +586,7 @@ module.exports =
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(91);
-	module.exports = __webpack_require__(102);
+	module.exports = __webpack_require__(100);
 
 
 /***/ },
@@ -714,7 +714,7 @@ module.exports =
 
 /***/ },
 
-/***/ 96:
+/***/ 95:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -727,11 +727,11 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Head = __webpack_require__(101);
+	var _Head = __webpack_require__(96);
 
 	var _Head2 = _interopRequireDefault(_Head);
 
-	var _link = __webpack_require__(104);
+	var _link = __webpack_require__(97);
 
 	var _link2 = _interopRequireDefault(_link);
 
@@ -799,7 +799,7 @@ module.exports =
 
 /***/ },
 
-/***/ 101:
+/***/ 96:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -833,7 +833,14 @@ module.exports =
 
 /***/ },
 
-/***/ 102:
+/***/ 97:
+/***/ function(module, exports) {
+
+	module.exports = require("next/link");
+
+/***/ },
+
+/***/ 100:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -846,7 +853,7 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(96);
+	var _Header = __webpack_require__(95);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -945,13 +952,6 @@ module.exports =
 	      }
 	    }
 	  
-
-/***/ },
-
-/***/ 104:
-/***/ function(module, exports) {
-
-	module.exports = require("next/link");
 
 /***/ }
 

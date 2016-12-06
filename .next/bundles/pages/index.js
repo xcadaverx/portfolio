@@ -66,7 +66,7 @@ module.exports =
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "427f621b50e4b10827a3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b05269ab26977ac862fc"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -261,7 +261,7 @@ module.exports =
 /******/ 			hotSetStatus("prepare");
 /******/ 			hotCallback = callback;
 /******/ 			hotUpdate = {};
-/******/ 			var chunkId = 2;
+/******/ 			var chunkId = 3;
 /******/ 			{ // eslint-disable-line no-lone-blocks
 /******/ 				/*globals chunkId */
 /******/ 				hotEnsureUpdateChunk(chunkId);
@@ -586,7 +586,7 @@ module.exports =
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(91);
-	module.exports = __webpack_require__(94);
+	module.exports = __webpack_require__(98);
 
 
 /***/ },
@@ -714,7 +714,7 @@ module.exports =
 
 /***/ },
 
-/***/ 94:
+/***/ 95:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -727,7 +727,133 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(96);
+	var _Head = __webpack_require__(96);
+
+	var _Head2 = _interopRequireDefault(_Head);
+
+	var _link = __webpack_require__(97);
+
+	var _link2 = _interopRequireDefault(_link);
+
+	var _css = __webpack_require__(90);
+
+	var _css2 = _interopRequireDefault(_css);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function () {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'absolute bg-white w-100' },
+	    _react2.default.createElement(_Head2.default, null),
+	    _react2.default.createElement(
+	      'nav',
+	      { className: 'dt w-100 border-box pa3 ph4-ns pv3-ns pv3 ' + vh10 },
+	      _react2.default.createElement(
+	        _link2.default,
+	        { href: '/' },
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'dtc v-mid black fw6 f4 tracked-tight link dim', title: 'Home' },
+	          'Daniel Williams'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'dtc v-mid w-75 tr' },
+	        _react2.default.createElement(
+	          _link2.default,
+	          { href: '/self' },
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'link black-40 tracked underline-hover hover-black f6 f6-ns dib mr3 mr5-ns', title: 'Self' },
+	            'Self'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _link2.default,
+	          { href: '/work' },
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'link black-40 tracked underline-hover hover-black f6 f6-ns dib mr3 mr5-ns', title: 'Work' },
+	            'Work'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _link2.default,
+	          { href: '#' },
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'link black-40 tracked underline-hover hover-black f6 f6-ns dib', title: 'Contact' },
+	            'Contact'
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+
+	var vh10 = (0, _css2.default)({
+	  height: '10vh'
+	});
+
+/***/ },
+
+/***/ 96:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(87);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _head = __webpack_require__(89);
+
+	var _head2 = _interopRequireDefault(_head);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function () {
+	  return _react2.default.createElement(
+	    _head2.default,
+	    null,
+	    _react2.default.createElement(
+	      'title',
+	      null,
+	      'Daniel Williams'
+	    ),
+	    _react2.default.createElement('link', { rel: 'stylesheet', href: 'https://unpkg.com/tachyons@4.5.5/css/tachyons.min.css' })
+	  );
+	};
+
+/***/ },
+
+/***/ 97:
+/***/ function(module, exports) {
+
+	module.exports = require("next/link");
+
+/***/ },
+
+/***/ 98:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(87);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Header = __webpack_require__(95);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -739,7 +865,7 @@ module.exports =
 
 	var _css2 = _interopRequireDefault(_css);
 
-	var _reactTypist = __webpack_require__(105);
+	var _reactTypist = __webpack_require__(99);
 
 	var _reactTypist2 = _interopRequireDefault(_reactTypist);
 
@@ -752,7 +878,7 @@ module.exports =
 	    _react2.default.createElement(
 	      _head2.default,
 	      null,
-	      _react2.default.createElement('link', { rel: 'stylesheet', href: 'https://raw.githubusercontent.com/jstejada/react-typist/master/dist/Typist.css' })
+	      _react2.default.createElement('link', { rel: 'stylesheet', href: '/static/Typist.css' })
 	    ),
 	    _react2.default.createElement(_Header2.default, null),
 	    _react2.default.createElement(
@@ -826,133 +952,7 @@ module.exports =
 
 /***/ },
 
-/***/ 96:
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(87);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Head = __webpack_require__(101);
-
-	var _Head2 = _interopRequireDefault(_Head);
-
-	var _link = __webpack_require__(104);
-
-	var _link2 = _interopRequireDefault(_link);
-
-	var _css = __webpack_require__(90);
-
-	var _css2 = _interopRequireDefault(_css);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = function () {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'absolute bg-white w-100' },
-	    _react2.default.createElement(_Head2.default, null),
-	    _react2.default.createElement(
-	      'nav',
-	      { className: 'dt w-100 border-box pa3 ph4-ns pv3-ns pv3 ' + vh10 },
-	      _react2.default.createElement(
-	        _link2.default,
-	        { href: '/' },
-	        _react2.default.createElement(
-	          'a',
-	          { className: 'dtc v-mid black fw6 f4 tracked-tight link dim', title: 'Home' },
-	          'Daniel Williams'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'dtc v-mid w-75 tr' },
-	        _react2.default.createElement(
-	          _link2.default,
-	          { href: '/self' },
-	          _react2.default.createElement(
-	            'a',
-	            { className: 'link black-40 tracked underline-hover hover-black f6 f6-ns dib mr3 mr5-ns', title: 'Self' },
-	            'Self'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _link2.default,
-	          { href: '/work' },
-	          _react2.default.createElement(
-	            'a',
-	            { className: 'link black-40 tracked underline-hover hover-black f6 f6-ns dib mr3 mr5-ns', title: 'Work' },
-	            'Work'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _link2.default,
-	          { href: '#' },
-	          _react2.default.createElement(
-	            'a',
-	            { className: 'link black-40 tracked underline-hover hover-black f6 f6-ns dib', title: 'Contact' },
-	            'Contact'
-	          )
-	        )
-	      )
-	    )
-	  );
-	};
-
-	var vh10 = (0, _css2.default)({
-	  height: '10vh'
-	});
-
-/***/ },
-
-/***/ 101:
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(87);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _head = __webpack_require__(89);
-
-	var _head2 = _interopRequireDefault(_head);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = function () {
-	  return _react2.default.createElement(
-	    _head2.default,
-	    null,
-	    _react2.default.createElement(
-	      'title',
-	      null,
-	      'Daniel Williams'
-	    ),
-	    _react2.default.createElement('link', { rel: 'stylesheet', href: 'https://unpkg.com/tachyons@4.5.5/css/tachyons.min.css' })
-	  );
-	};
-
-/***/ },
-
-/***/ 104:
-/***/ function(module, exports) {
-
-	module.exports = require("next/link");
-
-/***/ },
-
-/***/ 105:
+/***/ 99:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports =

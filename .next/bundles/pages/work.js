@@ -66,7 +66,7 @@ module.exports =
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "427f621b50e4b10827a3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b05269ab26977ac862fc"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -261,7 +261,7 @@ module.exports =
 /******/ 			hotSetStatus("prepare");
 /******/ 			hotCallback = callback;
 /******/ 			hotUpdate = {};
-/******/ 			var chunkId = 4;
+/******/ 			var chunkId = 8;
 /******/ 			{ // eslint-disable-line no-lone-blocks
 /******/ 				/*globals chunkId */
 /******/ 				hotEnsureUpdateChunk(chunkId);
@@ -586,7 +586,7 @@ module.exports =
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(91);
-	module.exports = __webpack_require__(103);
+	module.exports = __webpack_require__(320);
 
 
 /***/ },
@@ -714,7 +714,7 @@ module.exports =
 
 /***/ },
 
-/***/ 96:
+/***/ 95:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -727,11 +727,11 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Head = __webpack_require__(101);
+	var _Head = __webpack_require__(96);
 
 	var _Head2 = _interopRequireDefault(_Head);
 
-	var _link = __webpack_require__(104);
+	var _link = __webpack_require__(97);
 
 	var _link2 = _interopRequireDefault(_link);
 
@@ -799,7 +799,7 @@ module.exports =
 
 /***/ },
 
-/***/ 101:
+/***/ 96:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -833,7 +833,14 @@ module.exports =
 
 /***/ },
 
-/***/ 103:
+/***/ 97:
+/***/ function(module, exports) {
+
+	module.exports = require("next/link");
+
+/***/ },
+
+/***/ 320:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -846,7 +853,7 @@ module.exports =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(96);
+	var _Header = __webpack_require__(95);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
@@ -854,7 +861,7 @@ module.exports =
 
 	var _css2 = _interopRequireDefault(_css);
 
-	var _link = __webpack_require__(104);
+	var _link = __webpack_require__(97);
 
 	var _link2 = _interopRequireDefault(_link);
 
@@ -877,7 +884,7 @@ module.exports =
 	          _react2.default.createElement(
 	            _link2.default,
 	            { href: '/stockboard' },
-	            _react2.default.createElement('img', { className: 'w-100 db center', src: '/static/StockBoard.png' })
+	            _react2.default.createElement('img', { className: 'w-100 db center dim', src: '/static/StockBoard.png' })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -886,7 +893,7 @@ module.exports =
 	          _react2.default.createElement(
 	            _link2.default,
 	            { href: '/bap' },
-	            _react2.default.createElement('img', { className: 'w-100 db center', src: '/static/BeAPhotographer.png' })
+	            _react2.default.createElement('img', { className: 'w-100 db center dim', src: '/static/BeAPhotographer.png' })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -895,7 +902,7 @@ module.exports =
 	          _react2.default.createElement(
 	            _link2.default,
 	            { href: '/ydl' },
-	            _react2.default.createElement('img', { className: 'w-100 db center', src: '/static/YDL.png' })
+	            _react2.default.createElement('img', { className: 'w-100 db center dim', src: '/static/YDL.png' })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -904,7 +911,7 @@ module.exports =
 	          _react2.default.createElement(
 	            _link2.default,
 	            { href: '/showstubs' },
-	            _react2.default.createElement('img', { className: 'w-100 db center', src: '/static/ShowStubs.png' })
+	            _react2.default.createElement('img', { className: 'w-100 db center dim', src: '/static/ShowStubs.png' })
 	          )
 	        )
 	      )
@@ -933,13 +940,6 @@ module.exports =
 	      }
 	    }
 	  
-
-/***/ },
-
-/***/ 104:
-/***/ function(module, exports) {
-
-	module.exports = require("next/link");
 
 /***/ }
 

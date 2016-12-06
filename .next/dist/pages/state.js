@@ -28,10 +28,6 @@ var _react = require('/Users/xcadaverx/Desktop/dev/Web Projects/Portfolio/node_m
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Gallery = require('../components/Gallery');
-
-var _Gallery2 = _interopRequireDefault(_Gallery);
-
 var _Header = require('../components/Header');
 
 var _Header2 = _interopRequireDefault(_Header);
@@ -41,26 +37,6 @@ var _css = require('/Users/xcadaverx/Desktop/dev/Web Projects/Portfolio/node_mod
 var _css2 = _interopRequireDefault(_css);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var DEFAULT_IMAGES = [{ id: '1470619549108-b85c56fe5be8', caption: 'Photo by Alan Emery', orientation: 'square', useForDemo: true }, // https://unsplash.com/photos/SYzUF6XcWBY (Flamingo)
-{ id: '1471079502516-250c19af6928', caption: 'Photo by Jeremy Bishop', orientation: 'landscape', useForDemo: true }, // https://unsplash.com/photos/GIpGxe2_cT4 (Turtle)
-{ id: '1454023492550-5696f8ff10e1', caption: 'Photo by Jessica Weiller', orientation: 'landscape', useForDemo: true }, // https://unsplash.com/photos/LmVSKeDy6EA (Tiger)
-{ id: '1470854989922-5be2f7456d78', caption: 'Photo by Piotr Łaskawski', orientation: 'landscape', useForDemo: true }, // https://unsplash.com/photos/GXMr7BadXQo (Hedgehog)
-{ id: '1470317596697-cbdeda56f999', caption: 'Photo by Michel Bosma', orientation: 'landscape', useForDemo: true }];
-
-function makeUnsplashSrc(id) {
-  return 'https://images.unsplash.com/photo-' + id + '?dpr=2&auto=format&w=1024&h=1024';
-}
-function makeUnsplashSrcSet(id, size) {
-  return 'https://images.unsplash.com/photo-' + id + '?dpr=2&auto=format&w=' + size + ' ' + size + 'w';
-}
-function makeUnsplashThumbnail(id) {
-  var orientation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'landscape';
-
-  var dimensions = orientation === 'square' ? 'w=300&h=300' : 'w=240&h=159';
-
-  return 'https://images.unsplash.com/photo-' + id + '?dpr=2&auto=format&crop=faces&fit=crop&' + dimensions;
-}
 
 var _class = function (_React$Component) {
   (0, _inherits3.default)(_class, _React$Component);
@@ -112,19 +88,7 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: mw24r + " ml4-ns" },
-                _react2.default.createElement(_Gallery2.default, { images: DEFAULT_IMAGES.map(function (_ref) {
-                    var caption = _ref.caption,
-                        id = _ref.id,
-                        orientation = _ref.orientation,
-                        useForDemo = _ref.useForDemo;
-                    return {
-                      src: makeUnsplashSrc(id),
-                      thumbnail: makeUnsplashThumbnail(id, orientation),
-                      caption: caption,
-                      orientation: orientation,
-                      useForDemo: useForDemo
-                    };
-                  }) })
+                'gallery here.'
               )
             )
           )

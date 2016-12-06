@@ -33,7 +33,7 @@ exports.default = function () {
     _react2.default.createElement(
       _head2.default,
       null,
-      _react2.default.createElement('link', { rel: 'stylesheet', href: 'https://raw.githubusercontent.com/jstejada/react-typist/master/dist/Typist.css' })
+      _react2.default.createElement('link', { rel: 'stylesheet', href: '/static/Typist.css' })
     ),
     _react2.default.createElement(_Header2.default, null),
     _react2.default.createElement(
