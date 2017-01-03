@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import css from 'next/css'
+import Gallery from 'react-photo-gallery'
 
 
 export default class extends React.Component {
@@ -23,7 +24,7 @@ export default class extends React.Component {
           <div className="fl w-50-ns w-100 pa4 bl-ns bw1 b--black h-100-ns h-50 flex-ns items-center-ns">
             <div className={mw24r + " ml4-ns"}>
 
-							gallery here.
+              <Gallery photos={PHOTO_SET} />
 
             </div>
           </div>
@@ -34,6 +35,27 @@ export default class extends React.Component {
     )
   }
 }
+
+const PHOTO_SET = [
+  {
+    src: '/static/YDL.png',
+    width: 681,
+    height: 1024,
+    aspectRatio: 1.5,
+    lightboxImage:{
+      src: '/static/YDL.png'
+    }
+  },
+  {
+    src: '/static/YDL.png',
+    width: 600,
+    height: 600,
+    aspectRatio: 1,
+    lightboxImage:{
+      src: '/static/YDL.png'
+    }
+  }
+];
 
 const vh60 = css({
   height: '60vh'

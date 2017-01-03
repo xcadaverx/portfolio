@@ -36,6 +36,10 @@ var _css = require('/Users/xcadaverx/Desktop/dev/Web Projects/Portfolio/node_mod
 
 var _css2 = _interopRequireDefault(_css);
 
+var _reactPhotoGallery = require('react-photo-gallery');
+
+var _reactPhotoGallery2 = _interopRequireDefault(_reactPhotoGallery);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _class = function (_React$Component) {
@@ -88,7 +92,7 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: mw24r + " ml4-ns" },
-                'gallery here.'
+                _react2.default.createElement(_reactPhotoGallery2.default, { photos: PHOTO_SET })
               )
             )
           )
@@ -101,6 +105,24 @@ var _class = function (_React$Component) {
 
 exports.default = _class;
 
+
+var PHOTO_SET = [{
+  src: '/static/YDL.png',
+  width: 681,
+  height: 1024,
+  aspectRatio: 1.5,
+  lightboxImage: {
+    src: '/static/YDL.png'
+  }
+}, {
+  src: '/static/YDL.png',
+  width: 600,
+  height: 600,
+  aspectRatio: 1,
+  lightboxImage: {
+    src: '/static/YDL.png'
+  }
+}];
 
 var vh60 = (0, _css2.default)({
   height: '60vh'
